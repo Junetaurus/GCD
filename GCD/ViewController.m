@@ -147,7 +147,7 @@
     dispatch_queue_t queue = dispatch_queue_create("标识符", DISPATCH_QUEUE_SERIAL);
     
     NSLog(@"---start---");
-    //使用异步函数封装三个任务
+    //使用同步函数封装三个任务
     dispatch_sync(queue, ^{
         NSLog(@"任务1---%@", [NSThread currentThread]);
     });
